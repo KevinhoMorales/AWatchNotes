@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        var note = Note(title: "Una nota")
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "note")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+                .padding(16)
+            Text("\(note.title) - \(note.createdAt)")
         }
         .padding()
     }
