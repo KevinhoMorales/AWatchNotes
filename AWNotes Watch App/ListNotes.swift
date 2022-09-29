@@ -8,26 +8,30 @@
 import SwiftUI
 
 struct ListNotes: View {
-    @State private var notes = [Note(title: "Make a course"),
-                                Note(title: "Have a lunch"),
-                                Note(title: "Buy PS5")]
+    @State private var notes = [Note]()
     var body: some View {
-        List {
-            ForEach(notes) { note in
-                NavigationLink {
-                    DetailNote(note: note)
-                } label: {
-                    VStack (alignment: .leading) {
-                        Text(note.title)
-                            .fontWeight(.bold)
-                        Text(note.createdAt)
-                            .font(.system(size: 12))
+        VStack {
+            Text("Notes \(notes.count)")
+                .fontWeight(.bold)
+            List {
+                ForEach(notes) { note in
+                    NavigationLink {
+                        DetailNote(note: note)
+                    } label: {
+                        VStack (alignment: .leading) {
+                            Text(note.title)
+                                .fontWeight(.bold)
+                            Text(note.createdAt)
+                                .font(.system(size: 12))
+                        }
                     }
                 }
+                .onDelete { offSets in
+                    delete(offSets: offSets)
+                }
             }
-            .onDelete { offSets in
-                delete(offSets: offSets)
-            }
+        }.onAppear {
+            notes = Tools.shared.retrieveNotes()
         }
     }
     
@@ -36,10 +40,10 @@ struct ListNotes: View {
             print("Not Yet")
             return
         }
-        print("Delete")
         withAnimation {
             notes.remove(atOffsets: offSets)
         }
+        Tools.shared.saveNotes(notes: notes)
     }
 }
 

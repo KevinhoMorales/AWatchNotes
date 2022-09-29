@@ -16,6 +16,7 @@
 		BCCA697728E54DC000BE7378 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA697628E54DC000BE7378 /* AddNote.swift */; };
 		BCCA697928E5530600BE7378 /* ListNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA697828E5530600BE7378 /* ListNotes.swift */; };
 		BCCA697B28E5561900BE7378 /* DetailNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA697A28E5561900BE7378 /* DetailNote.swift */; };
+		BCCA697D28E5600500BE7378 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA697C28E5600500BE7378 /* Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BCCA697628E54DC000BE7378 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		BCCA697828E5530600BE7378 /* ListNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotes.swift; sourceTree = "<group>"; };
 		BCCA697A28E5561900BE7378 /* DetailNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNote.swift; sourceTree = "<group>"; };
+		BCCA697C28E5600500BE7378 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				BCCA696228E546EE00BE7378 /* AWNotesApp.swift */,
+				BCCA697C28E5600500BE7378 /* Tools.swift */,
 				BCCA696428E546EE00BE7378 /* ContentView.swift */,
 				BCCA697628E54DC000BE7378 /* AddNote.swift */,
 				BCCA697828E5530600BE7378 /* ListNotes.swift */,
@@ -208,6 +211,7 @@
 				BCCA696328E546EE00BE7378 /* AWNotesApp.swift in Sources */,
 				BCCA697B28E5561900BE7378 /* DetailNote.swift in Sources */,
 				BCCA697528E54C1100BE7378 /* Note.swift in Sources */,
+				BCCA697D28E5600500BE7378 /* Tools.swift in Sources */,
 				BCCA697728E54DC000BE7378 /* AddNote.swift in Sources */,
 				BCCA697928E5530600BE7378 /* ListNotes.swift in Sources */,
 			);

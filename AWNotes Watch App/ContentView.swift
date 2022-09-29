@@ -23,7 +23,7 @@ struct ContentView: View {
             } label: {
                 Text("VIEW NOTES")
             }
-        }
+        }.navigationTitle("Welcome")
     }
 }
 
