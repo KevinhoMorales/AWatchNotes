@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isActiveAddNote = false
+
     var body: some View {
-        var note = Note(title: "Una nota")
         VStack {
-            Image(systemName: "note")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-                .padding(16)
-            Text("\(note.title) - \(note.createdAt)")
+            NavigationLink {
+                AddNote()
+            } label: {
+                Text("ADD NOTE")
+            }
+            .padding([.bottom], 16)
+            NavigationLink {
+                ListNotes()
+            } label: {
+                Text("VIEW NOTES")
+            }
         }
-        .padding()
     }
 }
 
