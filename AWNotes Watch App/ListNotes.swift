@@ -21,6 +21,7 @@ struct ListNotes: View {
                         VStack (alignment: .leading) {
                             Text(note.title)
                                 .fontWeight(.bold)
+                                .lineLimit(1)
                             Text(note.createdAt)
                                 .font(.system(size: 12))
                         }

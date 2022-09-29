@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  WelcomeView.swift
 //  AWNotes Watch App
 //
 //  Created by Kevin Morales on 9/28/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct WelcomeView: View {
     @State private var isActiveAddNote = false
 
     var body: some View {
@@ -21,7 +21,7 @@ struct ContentView: View {
             NavigationLink {
                 ListNotes()
             } label: {
-                Text("VIEW NOTES")
+                Text("MY NOTES")
             }
         }.navigationTitle("Welcome")
     }
@@ -29,6 +29,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        WelcomeView()
     }
 }

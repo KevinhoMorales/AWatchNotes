@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BCCA695E28E546EE00BE7378 /* AWNotes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BCCA695D28E546EE00BE7378 /* AWNotes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCCA696328E546EE00BE7378 /* AWNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA696228E546EE00BE7378 /* AWNotesApp.swift */; };
-		BCCA696528E546EE00BE7378 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA696428E546EE00BE7378 /* ContentView.swift */; };
+		BCCA696528E546EE00BE7378 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA696428E546EE00BE7378 /* WelcomeView.swift */; };
 		BCCA696728E546F100BE7378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCA696628E546F100BE7378 /* Assets.xcassets */; };
 		BCCA696A28E546F100BE7378 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCA696928E546F100BE7378 /* Preview Assets.xcassets */; };
 		BCCA697528E54C1100BE7378 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA697428E54C1100BE7378 /* Note.swift */; };
@@ -47,7 +47,7 @@
 		BCCA695728E546EE00BE7378 /* AWNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCA695D28E546EE00BE7378 /* AWNotes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWNotes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCA696228E546EE00BE7378 /* AWNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWNotesApp.swift; sourceTree = "<group>"; };
-		BCCA696428E546EE00BE7378 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCCA696428E546EE00BE7378 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		BCCA696628E546F100BE7378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCCA696928E546F100BE7378 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCCA697428E54C1100BE7378 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			children = (
 				BCCA696228E546EE00BE7378 /* AWNotesApp.swift */,
 				BCCA697C28E5600500BE7378 /* Tools.swift */,
-				BCCA696428E546EE00BE7378 /* ContentView.swift */,
+				BCCA696428E546EE00BE7378 /* WelcomeView.swift */,
 				BCCA697628E54DC000BE7378 /* AddNote.swift */,
 				BCCA697828E5530600BE7378 /* ListNotes.swift */,
 				BCCA697A28E5561900BE7378 /* DetailNote.swift */,
@@ -207,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCCA696528E546EE00BE7378 /* ContentView.swift in Sources */,
+				BCCA696528E546EE00BE7378 /* WelcomeView.swift in Sources */,
 				BCCA696328E546EE00BE7378 /* AWNotesApp.swift in Sources */,
 				BCCA697B28E5561900BE7378 /* DetailNote.swift in Sources */,
 				BCCA697528E54C1100BE7378 /* Note.swift in Sources */,
